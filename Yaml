@@ -1,0 +1,7 @@
+stages:
+-test
+integration_test:
+stage:test
+script:
+-pip install-r requirements.txt
+-pytest tests/integration/test_api_db.py
